@@ -1,0 +1,25 @@
+{
+  "name": "peak-md",
+  "version": "1.0.0",
+  "description": "PEAK-MD WhatsApp Bot + Telegram Pair Bot | StarDev-il / Star Tech",
+  "main": "index.js",
+  "author": "StarDev-il",
+  "license": "MIT",
+  "engines": { "node": ">=20.0.0 <21.0.0", "npm": ">=9.0.0" },
+  "scripts": {
+    "start": "node index.js",
+    "start:tg": "node telegramPairBot.js",
+    "start:all": "node telegramPairBot.js & node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.12",
+    "@hapi/boom": "^10.0.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs-extra": "^11.2.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
