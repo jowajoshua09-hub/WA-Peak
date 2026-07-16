@@ -1,0 +1,15 @@
+services:
+    - type: web
+    name: peak-md-bot
+    runtime: node
+    region: frankfurt
+    plan: free
+    branch: main
+    buildCommand: npm install --no-audit --no-fund
+    startCommand: node telegramPairBot.js & node index.js
+    healthCheckPath: /health
+    envVars:
+            - key: NODE_VERSION
+        value: "20.18.0"
+            - key: NODE_ENV
+        value: production
